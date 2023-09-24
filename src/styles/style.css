@@ -24,7 +24,7 @@ body {
   justify-content: center;
 }
 .main {
-  max-width: 650px;
+  width: 650px;
   background-color: var(--Dark-Grayish-Blue);
   border-radius: 0.6rem;
   padding: 3rem 2.5rem;
