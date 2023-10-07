@@ -8,9 +8,13 @@ function doSortAdiceNumber() {
 }
 
 async function doAcessApi(sortNumber) {
-  let url = await fetch(`https://api.adviceslip.com/advice/${sortNumber}`);
-  let response = await url.json();
-  doRenderToAdvice(response);
+  try {
+    let url = await fetch(`https://api.adviceslip.com/advice/${sortNumber}`);
+    let response = await url.json();
+    doRenderToAdvice(response);
+  } catch (error) {
+    console.log(error);
+  }
 }
 function doRenderToAdvice(response) {
   let adviceId = response.slip.id;
