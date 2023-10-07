@@ -1,6 +1,6 @@
-let adviceNumber = document.querySelector("#advice");
-let adviceDescription = document.querySelector("#advice__description");
-let button = document.querySelector("#button");
+const adviceNumber = document.querySelector("#advice");
+const adviceDescription = document.querySelector("#advice__description");
+const button = document.querySelector("#button");
 
 function doSortAdiceNumber() {
   let sortNumber = Math.floor(Math.random() * 200);
