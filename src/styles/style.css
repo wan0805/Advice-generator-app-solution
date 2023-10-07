@@ -38,14 +38,14 @@ body {
   margin-bottom: 2rem;
 }
 .information__container {
-  width: 100%;
+  max-width: 42ch;
+  margin: 0 auto;
   text-align: center;
   color: var(--Light-Cyan);
 }
 .information--quote {
   font-size: 28px;
 }
-
 .divider {
   display: block;
   width: 100%;
